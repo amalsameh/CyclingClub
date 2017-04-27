@@ -1,0 +1,54 @@
+<div>
+  <form [formGroup]="eventdetail" (ngSubmit)="onSubmit(eventdetail)">
+    <div>
+      <label for="eventName">Event Name: </label>
+      <Label
+             class="form-control"
+             id="eventName"
+             [formControl]="eventform.controls['eventName']"></Label>
+    </div>
+    <div>
+      <label for="dueTime">DueTime: </label>
+      <Label
+             class="form-control"
+             id="dueTime"
+             [formControl]="eventform.controls['dueTime']"></Label>
+    </div>
+    <div>
+      <label for="Miles">Miles: </label>
+      <Label
+             class="form-control"
+             id="Miles"
+             [formControl]="eventform.controls['Miles']"></Label>
+    </div>
+    <div>
+      <label for="expectedDuration">expectedDuration: </label>
+      <Label
+             class="form-control"
+             id="expectedDuration"
+             [formControl]="eventform.controls['expectedDuration']"></Label>
+    </div>
+    <div>
+      <label for="startPoint">Starting Point: </label>
+      <Label
+             class="form-control"
+             id="startPoint"
+             [formControl]="eventform.controls['startPoint']"></Label>
+
+      <label for="endPoint">Ending Point: </label>
+      <Label
+             class="form-control"
+             id="endPoint"
+             [formControl]="eventform.controls['endPoint']"></Label>
+    </div>
+    <div>
+      <button class="btn btn-primary" (click)="onJoin()")>join</button>
+      <button class="btn btn-primary" (click)="onTrack()">Track</button>
+      <button class="btn btn-primary" (click)="onStart()">Start</button>
+      <button class="btn btn-primary" (click)="onResumee()">Resume</button>
+      <button class="btn btn-primary" (click)="onEnd()" )>End</button>
+      <button class="btn btn-primary" (click)="onEmergency()">Emergency Call!</button>
+      <button class="btn btn-primary" (click)="onBack()" )>Back</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,29 @@
+{
+    "_id": {"Owner": "Amal", "dueDate": "10/10/2010"},
+    "title": "Event1",
+    "location": {"long": 65, "lat": 55},
+    "status": "Not Started",
+    "miles": 22,
+    "startPoint": "AA",
+    "endPoint": "BB",
+    "notification": {"text":"test","status":"Sent"},
+    "club": {"_id": "club1",
+            "city": "fairfield",
+            "state": "Iowa",
+            "picture": "test",
+            "members": [{"_id":"aaaaaaaaaaa","name": "Amal",
+            "picture": "",
+            "city": "",
+            "state":""}],
+            "location": {"long": 33, "lat": 66}
+            },
+    "members": [
+        {"_id":"aaaaaaaaaaa",
+        "name": "Amal",
+        "picture": "",
+        "city": "",
+        "state":""}
+                ]
+  }
+
+

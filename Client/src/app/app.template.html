@@ -1,0 +1,23 @@
+<script src="home.component.ts"></script>
+<script src="main.ts"></script>
+<script src="auth.service.ts"></script>
+<script src="auth.config.ts"></script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Cycling Club</a>
+      <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
+      <div *ngIf="auth.authenticated()">
+        <div><button class="btn btn-primary btn-margin" (click)="auth.logout()" style="float:right" >Log Out</button></div>
+        <div><p style="float:right"><strong>Welcome: </strong> {{auth.userProfile.name}}</p>
+         <img [src]="auth.userProfile.picture" alt="" class="profile-img" style="float:right">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>

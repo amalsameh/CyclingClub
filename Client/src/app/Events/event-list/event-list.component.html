@@ -1,0 +1,22 @@
+<div>{{Title}}</div>
+<div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
+
+<div class='table-responsive'>
+  <table class='table'
+         *ngIf='events && events.length'>
+    <thead>
+    <tr>
+      <th>Event</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor='let event of events'>
+
+      <td><a [routerLink]="['/event', event._id.Owner]">
+        {{event.title}}
+      </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
